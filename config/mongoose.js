@@ -1,5 +1,5 @@
 const  mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://root:root@projecttask.bpr0j.mongodb.net/ProjectTask?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
